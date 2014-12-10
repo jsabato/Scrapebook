@@ -1,0 +1,11 @@
+<div class="container">
+   <ul>
+      <li><img src="http://img3.wikia.nocookie.net/__cb20121127011456/adventuretimewithfinnandjake/images/6/6b/Spock_smash.gif"/></li>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><h1><%= msg %></h1></li>
+    <% end %>
+    </ul>
+  <form action='/register' method='get'>
+    <input type='submit' value='Go Back'>
+  </form>
+</div>

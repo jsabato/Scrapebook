@@ -1,0 +1,11 @@
+<% count = 0 %>
+<div class="container">
+<% while count < @link.length %>
+  <div class="item_box">
+    <a href= <%= @link[count] %></a>
+    <img src= <%= @image[count] %>
+    <strong> <%= @price[count] %></strong>
+  </div>
+    <% count += 1 %>
+    <% end %>
+</div>
